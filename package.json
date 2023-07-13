@@ -1,0 +1,21 @@
+{
+    "name": "applitools-execution-cloud-non-eyes-example",
+    "version": "1.0.0",
+    "description": "An example project for Execution Cloud with Selenium in JavaScript and Jest",
+    "homepage": "https://dvinnik.dev/",
+    "repository": {
+      "type": "git",
+      "url": "git@github.com:dmitryvinn/applitools-execution-cloud-non-eyes-example.git"
+    },
+    "dependencies": {
+      "@applitools/eyes-selenium": "^4.66.0",
+      "jest": "^29.5.0",
+      "selenium-webdriver": "^4.9.2"
+    },
+    "scripts": {
+      "test": "jest \"test/*.js\" --config=jest.config.js --detectOpenHandles"
+    },
+    "engines": {
+      "node": ">=12.13.0"
+    }
+  }
