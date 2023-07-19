@@ -51,10 +51,6 @@ describe('Documentation Demo App', () => {
 
         await driver.manage().setTimeouts({ implicit: 10000 });
 
-    }, 60000)
-
-    test('should navigate to another page and increment its counter', async () => {
-
         await driver.executeScript(
             'applitools:startTest',
             {
@@ -63,6 +59,10 @@ describe('Documentation Demo App', () => {
                 'batch': { "id": batch.getId() }
             }
         )
+    }, 60000)
+
+    test('should navigate to another page and increment its counter', async () => {
+
         await driver.get('https://docs-demo-app.vercel.app/');
 
         await driver.findElement(By.xpath("//*[text() = 'Another Page']")).click();
