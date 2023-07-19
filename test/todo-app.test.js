@@ -53,7 +53,7 @@ describe('Documentation Demo App', () => {
 
     }, 60000)
 
-    test('should navigate to another page', async () => {
+    test('should navigate to another page and increment its counter', async () => {
 
         await driver.executeScript(
             'applitools:startTest',
